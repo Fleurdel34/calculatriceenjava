@@ -5,6 +5,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * Class for the graphical interface and construction of calculator
+ * @author Johanna
+ * @version 1.0
+ */
+
 public class Calcul implements ActionListener {
 
     JFrame frame;
@@ -23,6 +29,10 @@ public class Calcul implements ActionListener {
 
     char operator;
 
+    /**
+     * Construction graphical interface and buttons
+     * set up layout
+     */
     Calcul() {
         frame = new JFrame("Calculatrice");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -100,6 +110,10 @@ public class Calcul implements ActionListener {
 
     }
 
+    /**
+     * set up eventListener
+     * set up calculation
+     */
     public void actionPerformed (ActionEvent event){
 
     for (int i =0; i<10; i++){
